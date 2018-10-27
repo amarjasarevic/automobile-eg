@@ -1,0 +1,36 @@
+.scroll-up {
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 50%;
+    bottom: -100px;
+    cursor: pointer;
+    height: 50px;
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    transition: bottom .5s, opacity .5s;
+    width: 50px;
+    z-index: 10;
+}
+
+.scroll-up:focus {
+    outline: none;
+}
+
+.scroll-up > div {
+    background-color: #FFFFFF;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    width: 2px;
+}
+
+.scroll-up > div:first-child {
+    left: 17px;
+    transform: rotate(50deg);
+}
+
+.scroll-up > div:last-child {
+    right: 17px;
+    transform: rotate(-50deg);
+}

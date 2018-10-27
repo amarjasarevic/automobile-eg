@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
+import Footer from './footer'
+import ScrollUp from './scroll-up'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -36,11 +38,8 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-        <footer style={{ backgroundColor: 'rebeccapurple', height: 50, marginTop: -50 }}>
-          <div style={{ color: 'white', fontSize: 14, lineHeight: '50px', margin: '0 auto', maxWidth: 960, textAlign: 'center' }}>
-            © 2018 Automobile AG München. All Rights Reserved.
-          </div>
-        </footer>
+        <ScrollUp />
+        <Footer />
       </>
     )}
   />

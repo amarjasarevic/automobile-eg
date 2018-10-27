@@ -6,7 +6,6 @@
 .nav-item__link {
     color: #FFFFFF;
     text-decoration: none;
-    padding: 10px 15px 0 15px;
 }
 
 .header__root {
@@ -32,6 +31,10 @@
 }
 
 @media (min-width: 960px) {
+    .nav-item__link {
+        padding: 10px 15px 0 15px;
+    }
+
     .header__nav {
         display: inline-block;
     }
@@ -46,6 +49,10 @@
 }
 
 @media (max-width: 959px) {
+    .nav-item__link {
+        padding: 10px 10px 0 10px;
+    }
+
     .header__content {
         padding: 0;
         position: relative;
@@ -53,6 +60,8 @@
 
     .header__title {
         background-color: rebeccapurple;
+        font-size: 28px;
+        line-height: 39px;
         padding: 1.45rem 1.0875rem;
         width: calc(100% - 85px);
         z-index: 5;
