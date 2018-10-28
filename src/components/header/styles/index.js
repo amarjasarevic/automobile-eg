@@ -1,7 +1,7 @@
 import styled from 'react-emotion'
 
 // styles
-const HeaderStyle = styled('div')`
+export const HeaderStyle = styled('div')`
   padding: 14px 0px 14px 0;
   position: fixed;
   left: 0;
@@ -13,7 +13,7 @@ const HeaderStyle = styled('div')`
   transition: ${props => (props.showBg ? 'transition: all 0.5s' : null)};
 `
 
-const HeaderContent = styled('div')`
+export const HeaderContent = styled('div')`
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -22,7 +22,7 @@ const HeaderContent = styled('div')`
   align-items: center;
 `
 
-const HeaderLogo = styled('nav')`
+export const HeaderLogo = styled('nav')`
   font-size: 1.2rem;
   a {
     color: white;
@@ -30,7 +30,7 @@ const HeaderLogo = styled('nav')`
   }
 `
 
-const Nav = styled('nav')`
+export const Nav = styled('nav')`
   touch-action: pan-y;
   display: flex;
   justify-items: space-between;
@@ -40,12 +40,10 @@ const Nav = styled('nav')`
   margin-left: -15px;
 `
 
-const NavItemStyle = styled('div')`
+export const NavItemStyle = styled('div')`
   margin-right: 10px;
   a {
     color: white;
     text-decoration: none;
   }
 `
-
-export const { HeaderStyle, HeaderContent, HeaderLogo, Nav, NavItemStyle}
