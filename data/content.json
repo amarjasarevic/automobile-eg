@@ -4,6 +4,29 @@
     "headerSubtitle": "You can contact us any time!",
     "headerTelephone": "089-51299770",
     "headerEmail": "automobile-eg@gmail.com",
-    "headerCallToAction": "or you prefer forms"
+    "headerCallToAction": "or you prefer forms",
+    "aboutTitle": "We specialize in buying cars in and around Munich or Bavaria",
+    "aboutItems": [
+      {
+        "id": 1,
+        "title": "All brands",
+        "content": "We buy vehicles of all brands"
+      },
+      {
+        "id": 2,
+        "title": "All kinds",
+        "content": "We buy cars of all kinds, including accident vehicles"
+      },
+      {
+        "id": 3,
+        "title": "Engine failure",
+        "content": "Vehicles with engine failure, in which a repair in Germany is no longer worthwhile."
+      },
+      {
+        "id": 4,
+        "title": "High mileage",
+        "content": "Cars with high mileage, so many kilometers."
+      }
+    ]
   }
 ]

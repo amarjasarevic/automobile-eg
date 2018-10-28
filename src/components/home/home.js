@@ -9,14 +9,13 @@ import {
   CallToAction,
   HeaderLink,
 } from './styles'
-import headerBg from './bmw.jpeg'
 
-import './home.css'
+import headerBg from './bmw.jpeg'
 
 export default () => (
   <StaticQuery
     query={graphql`
-      query MainContentQuery {
+      query HeaderContentQuery {
         allContentJson {
           edges {
             node {
@@ -63,30 +62,3 @@ export default () => (
     }}
   />
 )
-
-// const Home = () => (
-//   <h1>home root</h1>
-//   // <div className="home__root">
-//   //   <div className="home__content">
-//   //     <h1>We buy your car</h1>
-//   //     <h1>
-//   //       <a href="tel:089-51299770" className="home__contact">
-//   //         089-51299770
-//   //       </a>
-//   //     </h1>
-//   //     <h1>
-//   //       <a href="mailto:automobile-eg@gmail.com" className="home__contact">
-//   //         automobile-eg@gmail.com
-//   //       </a>
-//   //     </h1>
-//   //     <h2>You can contact us any time!</h2>
-//   //     <h5>
-//   //       <Link to="/buy-form/" className="home__link">
-//   //         <div />
-//   //         <div />
-//   //         <span>or you prefer forms</span>
-//   //       </Link>
-//   //     </h5>
-//   //   </div>
-//   // </div>
-// )
