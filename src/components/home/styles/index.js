@@ -76,7 +76,6 @@ export const CallToAction = styled('div')`
   padding-left: 40px;
   padding-right: 40px;
   border: none;
-  color: #fff;
   display: inline-block;
   font-weight: 500;
   position: relative;
@@ -88,4 +87,9 @@ export const CallToAction = styled('div')`
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+
+  a {
+    color: #fff;
+    font-weight: bold;
+  }
 `

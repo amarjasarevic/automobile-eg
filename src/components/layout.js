@@ -4,7 +4,7 @@ import styled from 'react-emotion'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header/header'
-import Footer from './footer'
+import Footer from './footer/footer'
 import ScrollUp from './scroll-up'
 import './layout.css'
 

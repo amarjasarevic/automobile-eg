@@ -20,6 +20,11 @@ export const FeatureItem = styled('div')`
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+
+    &:hover {
+      box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+      cursor: pointer;
+    }
 }
 `
 
