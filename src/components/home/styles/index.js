@@ -23,21 +23,19 @@ export const HeaderContent = styled('div')`
   height: ${props => (props.height ? props.height : '60vh')};
 `
 export const Content = styled('div')`
-  text-align: justify;
   position: relative;
-  flex: 0 0 56%;
 
   h1,
   h2 {
     line-height: 1em;
     margin-top: 20px;
     color: white;
-    text-transform: uppercase;
   }
 
   h1 {
     font-size: 3rem;
     font-weight: 600;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -67,6 +65,39 @@ export const Content = styled('div')`
           top: 10px;
         }
       }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    flex: 0 0 56%;
+  }
+
+  @media (min-width: 960px) and (max-width: 1199px) {
+    flex: 0 0 66%;
+  }
+
+  @media (max-width: 959px) {
+    flex: 0 0 100%;
+
+    h2 {
+      flex-direction: column;
+      align-items: start;
+
+      a {
+        margin-right: 0;
+
+        &:first-child {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 589px) {
+    h1 {
+      font-size: 1.7rem;
     }
   }
 `

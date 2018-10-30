@@ -58,6 +58,8 @@ export default ({ ...props }) => (
                     <Link to="/buy-form/">{content.headerCallToAction}</Link>
                   </CallToAction>
                 )}
+
+                {!showAction && (<div style={{ height: 44 }} />)}
               </Content>
             </HeaderContent>
           </div>

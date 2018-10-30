@@ -4,17 +4,12 @@
     padding: 1.45rem 1.0875rem;
 }
 
+.buy-form__root input, .buy-form__root textarea, .buy-form__root button {
+    border: 1px solid #D3D3D3;
+}
+
 .buy-form__root section {
     margin-top: 50px;
-}
-
-.buy-form__fields > div {
-    display: inline-block;
-    width: 48%;
-}
-
-.buy-form__fields > div:last-child {
-    float: right;
 }
 
 .buy-form__actions {
@@ -24,8 +19,7 @@
 .buy-form__actions > button {
     cursor: pointer;
     outline: none;
-    padding: 5px 15px;
-    width: 140px;
+    padding: 5px 0;
 }
 
 .buy-form__actions > button:hover {
@@ -35,20 +29,33 @@
 .buy-form__actions > button:first-child {
     background-color: #FFFFFF;
     color: #04091e;
-    margin-right: 4%;
+    margin-right: 2%;
 }
 
 .buy-form__actions > button:last-child {
     background-color: #04091e;
     color: #FFFFFF;
+    margin-left: 2%;
 }
 
 @media (min-width: 960px) {
+    .buy-form__fields > div {
+        display: inline-block;
+        width: 48%;
+    }
 
+    .buy-form__fields > div:last-child {
+        float: right;
+    }
+
+    .buy-form__actions > button {
+        width: 140px;
+    }
 }
 
 @media (max-width: 959px) {
-    input, textarea, button {
-        border: 1px solid gray;
+    .buy-form__actions > button {
+        max-width: 150px;
+        width: 48%;
     }
 }

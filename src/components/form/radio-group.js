@@ -8,7 +8,7 @@ const RadioGroup = ({ identifier, label, options, required }) => (
     </label>
     { options.map(({ key, value }) =>
         <Fragment key={key}>
-          <input type="radio" name={identifier} id={key} value={key} style={{ marginLeft: 80 }} required={required} />
+          <input type="radio" name={identifier} id={key} value={key} style={{ marginLeft: 30 }} required={required} />
           <label htmlFor={key} style={{ marginLeft: 10 }}>{ value }</label>
         </Fragment>
       )

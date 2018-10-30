@@ -31,6 +31,16 @@ export const HeaderLogo = styled('nav')`
       font-weight: bold;
     }
   }
+  @media (max-width: 449px) {
+    a > span:last-child {
+      display: none;
+    }
+  }
+  @media (min-width: 450px) {
+    a > span:first-child {
+      display: none;
+    }
+  }
 `
 
 export const Nav = styled('nav')`
@@ -39,17 +49,23 @@ export const Nav = styled('nav')`
   justify-items: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 `
 
 export const NavItemStyle = styled('div')`
-  margin-right: 10px;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
   a {
     color: white;
     text-decoration: none;
     &:hover {
       font-weight: bold;
+    }
+  }
+  @media (max-width: 339px) {
+    &:first-child {
+      display: none;
     }
   }
 `

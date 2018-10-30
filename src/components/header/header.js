@@ -60,7 +60,10 @@ class Header extends React.Component {
         <div className="container">
           <HeaderContent>
             <HeaderLogo>
-              <Link to="/">{this.props.siteTitle}</Link>
+              <Link to="/">
+                {/* TODO: First span could be a logo? */}
+                <span>EG</span> <span>{this.props.siteTitle}</span>
+              </Link>
             </HeaderLogo>
 
             <Nav onClick={this.handleMenuClick}>
