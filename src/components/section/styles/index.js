@@ -11,6 +11,11 @@ export const SectionTitle = styled('h1')`
   max-width: 45rem;
 `
 
+export const SectionSubtitle = styled('h4')`
+  font-size: 1.5rem;
+  max-width: 50rem;
+`
+
 export const SectionContent = styled('div')`
   margin-top: 5rem;
   position: relative;

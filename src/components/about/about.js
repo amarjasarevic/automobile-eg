@@ -23,7 +23,6 @@ export default () => (
     `}
     render={data => {
       const content = data.allContentJson.edges[0].node
-      console.warn('content::: ', content)
       return (
         <Section title={content.aboutTitle}>
           <AboutRow>

@@ -34,9 +34,10 @@
     "react-dom": "16.5.1",
     "react-emotion": "9.2.12",
     "react-helmet": "5.2.0",
-    "react-typography": "0.16.13",
-    "typography": "0.16.17",
-    "typography-theme-fairy-gates": "0.15.11"
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17",
+    "typography-theme-fairy-gates": "^0.15.11",
+    "velocity-react": "^1.4.1"
   },
   "devDependencies": {
     "prettier": "1.14.2"

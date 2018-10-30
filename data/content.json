@@ -27,6 +27,25 @@
         "title": "High mileage",
         "content": "Cars with high mileage, so many kilometers."
       }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "How can we help ? ",
+    "faqItems": [
+      {
+        "id": 1,
+        "title": "First question",
+        "content": "First answer"
+      },
+      {
+        "id": 2,
+        "title": "Second question",
+        "content": "Second answer"
+      },
+      {
+        "id": 3,
+        "title": "Third question",
+        "content": "First answer"
+      }
     ]
   }
 ]
