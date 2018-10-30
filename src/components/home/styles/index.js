@@ -3,6 +3,8 @@ import styled from 'react-emotion'
 export const Header = styled('div')`
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `
 
 export const OverlayBg = styled('div')`

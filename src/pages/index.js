@@ -42,7 +42,7 @@ injectGlobal`
 const IndexPage = () => {
   return (
     <Layout>
-      <Home />
+      <Home showAction />
       <About />
       <Contact />
     </Layout>
