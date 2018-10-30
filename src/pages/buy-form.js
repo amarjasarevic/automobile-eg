@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Home from '../components/home/home'
 import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
@@ -18,25 +19,25 @@ const doorsOptions = [
 
 class BuyForm extends React.Component {
   constructor() {
-    super();
+    super()
 
-    this.formElement = React.createRef();
+    this.formElement = React.createRef()
   }
 
-  isValidValue = (element) => element.type !=='radio' || element.checked
+  isValidValue = element => element.type !== 'radio' || element.checked
 
   handleClear = () => {
-    this.formElement.current.reset();
+    this.formElement.current.reset()
   }
 
   handleSubmit = () => {
-    const request = {};
+    const request = {}
 
-    const elements = this.formElement.current.elements;
+    const elements = this.formElement.current.elements
 
     for (let i = 0; i < elements.length; i += 1) {
       if (elements[i].name && this.isValidValue(elements[i])) {
-        request[elements[i].name] = elements[i].value;
+        request[elements[i].name] = elements[i].value
       }
     }
 
@@ -50,8 +51,8 @@ class BuyForm extends React.Component {
 
     fetch('http://localhost:8080/new-car', fetchOptions)
       .then(() => {
-        this.handleClear();
-        console.log('Request successfully sent.');
+        this.handleClear()
+        console.log('Request successfully sent.')
       })
       .catch(() => console.log('Something wrong. Please try again.'))
   }
@@ -59,6 +60,7 @@ class BuyForm extends React.Component {
   render() {
     return (
       <Layout>
+        <Home />
         <div className="buy-form__root">
           <h1>Buy form</h1>
           <form ref={this.formElement}>
@@ -73,21 +75,37 @@ class BuyForm extends React.Component {
               <h3>Car data</h3>
               <TextField identifier={'brand'} label={'Brand'} />
               <TextField identifier={'type'} label={'Type'} />
-              <RadioGroup identifier={'fuel'} label={'Fuel'} options={fuelOptions} />
-              <TextField identifier={'registration'} label={'First registration'} type={'date'} />
+              <RadioGroup
+                identifier={'fuel'}
+                label={'Fuel'}
+                options={fuelOptions}
+              />
+              <TextField
+                identifier={'registration'}
+                label={'First registration'}
+                type={'date'}
+              />
               <TextField identifier={'mileage'} label={'Mileage'} />
               <TextField identifier={'tuv'} label={'TÜV'} />
               <TextField identifier={'colour'} label={'Colour'} />
               <TextField identifier={'ps'} label={'PS'} type={'number'} />
-              <RadioGroup identifier={'doors'} label={'Doors'} options={doorsOptions} />
+              <RadioGroup
+                identifier={'doors'}
+                label={'Doors'}
+                options={doorsOptions}
+              />
               <TextField identifier={'displacement'} label={'Displacement'} />
               <TextField identifier={'price'} label={'Price'} type={'number'} />
               <TextArea identifier={'other'} label={'Other info'} />
             </section>
             <section>
               <div className="buy-form__actions">
-                <button type="button" onClick={this.handleClear}>Clear</button>
-                <button type="button" onClick={this.handleSubmit}>Send request</button>
+                <button type="button" onClick={this.handleClear}>
+                  Clear
+                </button>
+                <button type="button" onClick={this.handleSubmit}>
+                  Send request
+                </button>
               </div>
             </section>
           </form>

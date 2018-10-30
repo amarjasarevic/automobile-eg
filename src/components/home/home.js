@@ -11,8 +11,9 @@ import {
 } from './styles'
 
 import headerBg from './bmw.jpeg'
+import { homedir } from 'os'
 
-export default () => (
+export default ({ ...props }) => (
   <StaticQuery
     query={graphql`
       query HeaderContentQuery {
@@ -31,10 +32,12 @@ export default () => (
     `}
     render={data => {
       const content = data.allContentJson.edges[0].node
+      const { showAction } = props || false
+
       return (
         <Header
           style={{
-            background: `url(${headerBg}) center`,
+            backgroundImage: `url(${headerBg})`,
           }}
         >
           <OverlayBg />
@@ -51,9 +54,11 @@ export default () => (
                   </HeaderLink>
                 </h2>
 
-                <CallToAction>
-                  <Link to="/buy-form/">{content.headerCallToAction}</Link>
-                </CallToAction>
+                {showAction && (
+                  <CallToAction>
+                    <Link to="/buy-form/">{content.headerCallToAction}</Link>
+                  </CallToAction>
+                )}
               </Content>
             </HeaderContent>
           </div>
