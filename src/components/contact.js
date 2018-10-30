@@ -31,7 +31,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div id="contact" style={{ height: '75vh', marginBottom: 100, paddingTop: 50, position: 'relative' }}>
+      <div id="contact" style={{ height: '75vh', position: 'relative' }}>
         <Map
           item
           xs={12}

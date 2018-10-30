@@ -67,7 +67,7 @@ class ScrollUp extends React.Component {
   }
 
   render() {
-    const scrollUpStyle = this.state.showScrollUp ? { bottom: '55px', opacity: 0.9 } : {};
+    const scrollUpStyle = this.state.showScrollUp ? { bottom: '6rem', opacity: 0.9 } : {};
 
     return (
       <button

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 const DISTANCE = 50
-const SPEED = 250
 
 const withScrollWatch = WrappedComponent => {
   return class extends Component {
