@@ -27,6 +27,9 @@ export const HeaderLogo = styled('nav')`
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      font-weight: bold;
+    }
   }
 `
 
@@ -45,5 +48,8 @@ export const NavItemStyle = styled('div')`
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      font-weight: bold;
+    }
   }
 `

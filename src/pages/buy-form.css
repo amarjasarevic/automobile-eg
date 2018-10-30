@@ -4,31 +4,51 @@
     padding: 1.45rem 1.0875rem;
 }
 
+.buy-form__root section {
+    margin-top: 50px;
+}
+
+.buy-form__fields > div {
+    display: inline-block;
+    width: 48%;
+}
+
+.buy-form__fields > div:last-child {
+    float: right;
+}
+
 .buy-form__actions {
-    text-align: right;
+    text-align: center;
+}
+
+.buy-form__actions > button {
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+    width: 140px;
+}
+
+.buy-form__actions > button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buy-form__actions > button:first-child {
-    margin-right: 25px;
+    background-color: #FFFFFF;
+    color: #04091e;
+    margin-right: 4%;
 }
 
 .buy-form__actions > button:last-child {
-    background-color: rebeccapurple;
+    background-color: #04091e;
     color: #FFFFFF;
 }
 
 @media (min-width: 960px) {
-    .buy-form__root section {
-        margin-bottom: 75px;
-    }
+
 }
 
 @media (max-width: 959px) {
     input, textarea, button {
         border: 1px solid gray;
-    }
-
-    .buy-form__root section {
-        margin-bottom: 50px;
     }
 }

@@ -47,9 +47,13 @@ export const Content = styled('div')`
 
     a {
       color: white;
-      margin-right: 30px;
+      margin-right: 35px;
       position: relative;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: #fab700;
+      }
 
       &:first-child {
         &:after {
@@ -75,8 +79,6 @@ export const HeaderLink = styled('a')`
 export const CallToAction = styled('div')`
   background-color: #fab700;
   line-height: 42px;
-  padding-left: 40px;
-  padding-right: 40px;
   border: none;
   display: inline-block;
   font-weight: 500;
@@ -93,5 +95,7 @@ export const CallToAction = styled('div')`
   a {
     color: #fff;
     font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 `

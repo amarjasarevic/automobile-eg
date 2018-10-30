@@ -63,47 +63,66 @@ class BuyForm extends React.Component {
         <Home />
         <div className="buy-form__root">
           <h1>Buy form</h1>
-          <form ref={this.formElement}>
+          <form ref={this.formElement} onSubmit={this.handleSubmit}>
+            <p>Fields marked with * are required.</p>
             <section>
               <h3>Contact data</h3>
-              <TextField identifier={'name'} label={'Full name'} />
-              <TextField identifier={'email'} label={'Email'} type={'email'} />
-              <TextField identifier={'phone'} label={'Phone'} type={'tel'} />
-              <TextField identifier={'location'} label={'Post code / City'} />
+              <div className="buy-form__fields">
+                <TextField identifier={'name'} label={'Full name'} />
+                <TextField identifier={'email'} label={'Email'} type={'email'} />
+              </div>
+              <div className="buy-form__fields">
+                <TextField identifier={'phone'} label={'Phone'} type={'tel'} required />
+                <TextField identifier={'location'} label={'Post code / City'} required />
+              </div>
             </section>
             <section>
               <h3>Car data</h3>
-              <TextField identifier={'brand'} label={'Brand'} />
-              <TextField identifier={'type'} label={'Type'} />
-              <RadioGroup
-                identifier={'fuel'}
-                label={'Fuel'}
-                options={fuelOptions}
-              />
-              <TextField
-                identifier={'registration'}
-                label={'First registration'}
-                type={'date'}
-              />
-              <TextField identifier={'mileage'} label={'Mileage'} />
-              <TextField identifier={'tuv'} label={'TÜV'} />
-              <TextField identifier={'colour'} label={'Colour'} />
-              <TextField identifier={'ps'} label={'PS'} type={'number'} />
-              <RadioGroup
-                identifier={'doors'}
-                label={'Doors'}
-                options={doorsOptions}
-              />
-              <TextField identifier={'displacement'} label={'Displacement'} />
-              <TextField identifier={'price'} label={'Price'} type={'number'} />
-              <TextArea identifier={'other'} label={'Other info'} />
+              <div className="buy-form__fields">
+                <TextField identifier={'brand'} label={'Brand'} required />
+                <TextField identifier={'type'} label={'Type'} required />
+              </div>
+              <div className="buy-form__fields">
+                <TextField
+                  identifier={'registration'}
+                  label={'First registration'}
+                  type={'date'}
+                  required
+                />
+                <RadioGroup
+                  identifier={'fuel'}
+                  label={'Fuel'}
+                  options={fuelOptions}
+                  required
+                />
+              </div>
+              <div className="buy-form__fields">
+                <TextField identifier={'mileage'} label={'Mileage'} />
+                <TextField identifier={'tuv'} label={'TÜV'} />
+              </div>
+              <div className="buy-form__fields">
+                <TextField identifier={'ps'} label={'PS'} type={'number'} />
+                <RadioGroup
+                  identifier={'doors'}
+                  label={'Doors'}
+                  options={doorsOptions}
+                />
+              </div>
+              <div className="buy-form__fields">
+                <TextField identifier={'colour'} label={'Colour'} />
+                <TextField identifier={'price'} label={'Price'} type={'number'} />
+              </div>
+              <div className="buy-form__fields">
+                <TextArea identifier={'displacement'} label={'Displacement'} />
+                <TextArea identifier={'other'} label={'Other info'} />
+              </div>
             </section>
             <section>
               <div className="buy-form__actions">
                 <button type="button" onClick={this.handleClear}>
                   Clear
                 </button>
-                <button type="button" onClick={this.handleSubmit}>
+                <button type="submit">
                   Send request
                 </button>
               </div>

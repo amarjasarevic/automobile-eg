@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-const RadioGroup = ({ identifier, label, options }) => (
+const RadioGroup = ({ identifier, label, options, required }) => (
   <div style={{ marginBottom: 20 }}>
-    <label htmlFor={identifier}>
-      { label }
+    <label htmlFor={identifier} style={{ display: 'block' }}>
+      { label } { required && '*' }
     </label>
     { options.map(({ key, value }) =>
         <Fragment key={key}>
-          <input type="radio" name={identifier} id={key} value={key} style={{ marginLeft: 30 }} />
+          <input type="radio" name={identifier} id={key} value={key} style={{ marginLeft: 80 }} required={required} />
           <label htmlFor={key} style={{ marginLeft: 10 }}>{ value }</label>
         </Fragment>
       )
@@ -23,6 +23,7 @@ RadioGroup.propTypes = {
     key: PropTypes.string,
     value: PropTypes.string,
   })).isRequired,
+  required: PropTypes.bool,
 }
 
 export default RadioGroup

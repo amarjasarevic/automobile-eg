@@ -11,7 +11,6 @@ import {
 } from './styles'
 
 import headerBg from './bmw.jpeg'
-import { homedir } from 'os'
 
 export default ({ ...props }) => (
   <StaticQuery
