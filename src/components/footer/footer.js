@@ -4,7 +4,7 @@ import { FooterStyles } from './styles'
 const Footer = () => (
   <FooterStyles>
     <div className="container">
-      <div>© 2018 Automobile AG München. All Rights Reserved.</div>
+      <div>© 2018 Automobile EG München. All Rights Reserved.</div>
     </div>
   </FooterStyles>
 )

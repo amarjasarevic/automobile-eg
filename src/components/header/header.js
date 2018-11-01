@@ -9,6 +9,8 @@ import {
   NavItemStyle,
 } from './styles'
 
+import logo from './automobile-eg-logo.png'
+
 const NavItem = ({ label, href }) => (
   <NavItemStyle>
     <Link to={href} className="nav-item__link">
@@ -62,7 +64,8 @@ class Header extends React.Component {
             <HeaderLogo>
               <Link to="/">
                 {/* TODO: First span could be a logo? */}
-                <span>EG</span> <span>{this.props.siteTitle}</span>
+                <span>Automobile</span>
+                <img src={logo} alt="EG" width={40} />
               </Link>
             </HeaderLogo>
 

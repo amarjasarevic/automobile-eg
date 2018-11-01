@@ -10,7 +10,7 @@ import {
   HeaderLink,
 } from './styles'
 
-import headerBg from './bmw.jpeg'
+import headerBg from './tow-truck.jpg'
 
 export default ({ ...props }) => (
   <StaticQuery

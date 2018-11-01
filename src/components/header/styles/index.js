@@ -30,16 +30,22 @@ export const HeaderLogo = styled('nav')`
     &:hover {
       font-weight: bold;
     }
-  }
-  @media (max-width: 449px) {
-    a > span:last-child {
-      display: none;
+    img {
+      margin: 0 5px;
+      vertical-align: middle;
     }
+  }
+  @media (max-width: 499px) {
+    a {
+      span {
+        display: none;
+      }
+      img {
+        margin: 0;
+      }
   }
   @media (min-width: 450px) {
-    a > span:first-child {
-      display: none;
-    }
+    
   }
 `
 
