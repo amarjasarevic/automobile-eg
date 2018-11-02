@@ -5,6 +5,7 @@ export const Header = styled('div')`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 320px;
 `
 
 export const OverlayBg = styled('div')`
@@ -21,6 +22,7 @@ export const HeaderContent = styled('div')`
   align-items: center;
   flex-wrap: wrap;
   height: ${props => (props.height ? props.height : '60vh')};
+  min-height: 320px;
 `
 export const Content = styled('div')`
   position: relative;
@@ -78,6 +80,10 @@ export const Content = styled('div')`
 
   @media (max-width: 959px) {
     flex: 0 0 100%;
+    
+    h1 {
+      font-size: 1.7rem;
+    }
 
     h2 {
       flex-direction: column;
@@ -92,12 +98,6 @@ export const Content = styled('div')`
           }
         }
       }
-    }
-  }
-
-  @media (max-width: 589px) {
-    h1 {
-      font-size: 1.7rem;
     }
   }
 `
