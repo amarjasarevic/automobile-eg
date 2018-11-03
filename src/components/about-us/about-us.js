@@ -30,7 +30,7 @@ export default () => (
       const content = data.allContentJson.edges[0].node
 
       return (
-        <Section title={content.aboutUsTitle} id="about">
+        <Section title={content.aboutUsTitle}>
           <AboutUsItems>
             {content.aboutUsItems.map((item) => {
 

@@ -10,10 +10,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Automobile EG',
-        short_name: 'AutoEG',
+        short_name: 'Automobile EG',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#04091e',
+        theme_color: '#04091e',
         display: 'minimal-ui',
         icon: 'src/images/automobile-eg-icon.png', // This path is relative to the root of the site.
       },

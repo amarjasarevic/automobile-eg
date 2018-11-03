@@ -44,9 +44,6 @@ export const HeaderLogo = styled('nav')`
         margin: 0;
       }
   }
-  @media (min-width: 450px) {
-    
-  }
 `
 
 export const Nav = styled('nav')`
@@ -69,7 +66,7 @@ export const NavItemStyle = styled('div')`
       font-weight: bold;
     }
   }
-  @media (max-width: 339px) {
+  @media (max-width: 549px) {
     &:first-child {
       display: none;
     }

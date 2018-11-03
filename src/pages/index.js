@@ -4,7 +4,7 @@ import Home from '../components/home/home'
 import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
 // import Faq from '../components/faq/faq'
-import Contact from '../components/contact'
+import Location from '../components/location'
 import { injectGlobal } from 'emotion'
 
 injectGlobal`
@@ -43,10 +43,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <Home showAction />
-      <About />
-      <AboutUs />
+      <div id="about">
+        <About />
+        <AboutUs />
+      </div>
       {/* <Faq /> */}
-      <Contact />
+      <Location />
     </Layout>
   )
 }

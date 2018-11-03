@@ -2,7 +2,7 @@ import React from 'react'
 import { SectionStyles, SectionTitle } from './section/styles/index'
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react'
 
-class Contact extends React.Component {
+class Location extends React.Component {
   constructor() {
     super();
 
@@ -33,7 +33,7 @@ class Contact extends React.Component {
   render() {
     return (
       <SectionStyles>
-        <div className="container">
+        <div className="container" id="location">
           <SectionTitle>Look, maybe we are not so far</SectionTitle>
         </div>
         <div style={{ height: '75vh', position: 'relative' }}>
@@ -73,4 +73,4 @@ class Contact extends React.Component {
 
 export default GoogleApiWrapper({
   api: (process.env.GOOGLE_API_KEY_GOES_HERE)
-})(Contact)
+})(Location)

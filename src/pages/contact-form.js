@@ -4,7 +4,7 @@ import Home from '../components/home/home'
 import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
-import './buy-form.css'
+import './contact-form.css'
 
 const fuelOptions = [
   { key: 'petrol', value: 'Petrol' },
@@ -17,7 +17,7 @@ const doorsOptions = [
   { key: '4/5', value: '4/5' },
 ]
 
-class BuyForm extends React.Component {
+class ContactForm extends React.Component {
   constructor() {
     super()
 
@@ -134,4 +134,4 @@ class BuyForm extends React.Component {
   }
 }
 
-export default BuyForm
+export default ContactForm
