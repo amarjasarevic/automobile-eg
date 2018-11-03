@@ -5,27 +5,43 @@
     "headerTelephone": "+49 172 8 666 828",
     "headerEmail": "automobile.grozdanic@gmail.com",
     "headerCallToAction": "OFFER YOUR CAR",
+    "aboutUsTitle": "We can make a deal in several ways",
+    "aboutUsItems": [
+      {
+        "id": 1,
+        "image": "/static/on-the-spot.png",
+        "title": "On the spot",
+        "content": "You are more then welcome to come to our place with your car. Our location can be found at the bottom of the page."
+      },
+      {
+        "id": 2,
+        "title": "Contact form",
+        "image": "/static/contact-form.png",
+        "content": "There is a well designed contact form. Enter the data about your car, and expect our call very soon. :)"
+      },
+      {
+        "id": 3,
+        "title": "Phone or mail",
+        "image": "/static/phone-or-mail.png",
+        "content": "You are free to contact us at any time via phone or mail, and in any form you want. Scroll up to find our contact data."
+      }
+    ],
     "aboutTitle": "We specialize in buying cars in and around Munich or Bavaria",
     "aboutItems": [
       {
         "id": 1,
         "title": "All brands",
-        "content": "We buy vehicles of all brands"
+        "content": "We buy vehicles of all brands, even if it is made in Yugoslavia :)"
       },
       {
         "id": 2,
-        "title": "All kinds",
-        "content": "We buy cars of all kinds, including accident vehicles"
+        "title": "All types",
+        "content": "We do not care is it city car, limo, van, truck, or even dredge"
       },
       {
         "id": 3,
-        "title": "Engine failure",
-        "content": "Vehicles with engine failure, in which a repair in Germany is no longer worthwhile."
-      },
-      {
-        "id": 4,
-        "title": "High mileage",
-        "content": "Cars with high mileage, so many kilometers."
+        "title": "All conditions",
+        "content": "We also have nothing against old, accident, and long travelers vehicles"
       }
     ],
     "faqTitle": "Frequently asked questions",

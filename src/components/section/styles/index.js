@@ -2,7 +2,7 @@ import styled from 'react-emotion'
 
 export const SectionStyles = styled('section')`
   position: relative;
-  padding: 120px 0;
+  padding: 80px 0 0 0;
   background: white;
 `
 
@@ -17,6 +17,6 @@ export const SectionSubtitle = styled('h4')`
 `
 
 export const SectionContent = styled('div')`
-  margin-top: 5rem;
+  margin-top: 4rem;
   position: relative;
 `

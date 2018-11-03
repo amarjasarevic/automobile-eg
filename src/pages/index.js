@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
+import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
-import Faq from '../components/faq/faq'
+// import Faq from '../components/faq/faq'
 import Contact from '../components/contact'
 import { injectGlobal } from 'emotion'
 
@@ -43,7 +44,8 @@ const IndexPage = () => {
     <Layout>
       <Home showAction />
       <About />
-      <Faq />
+      <AboutUs />
+      {/* <Faq /> */}
       <Contact />
     </Layout>
   )
