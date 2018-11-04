@@ -55,7 +55,7 @@ export default ({ ...props }) => (
 
                 {showAction && (
                   <CallToAction>
-                    <Link to="/buy-form/">{content.headerCallToAction}</Link>
+                    <Link to="/contact-form/">{content.headerCallToAction}</Link>
                   </CallToAction>
                 )}
 

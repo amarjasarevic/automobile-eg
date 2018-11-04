@@ -33,7 +33,7 @@ class Location extends React.Component {
   render() {
     return (
       <SectionStyles>
-        <div className="container" id="location">
+        <div className="container">
           <SectionTitle>Look, maybe we are not so far</SectionTitle>
         </div>
         <div style={{ height: '75vh', position: 'relative' }}>

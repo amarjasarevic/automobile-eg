@@ -48,7 +48,9 @@ const IndexPage = () => {
         <AboutUs />
       </div>
       {/* <Faq /> */}
-      <Location />
+      <div id="location">
+        <Location />
+      </div>
     </Layout>
   )
 }
