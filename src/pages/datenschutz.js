@@ -15,7 +15,7 @@ const Datenschutz = () => (
         <p>
           Wie Sie bereits gesehen haben, ist die Nutzung unserer Website ohne Angabe personenbezogener Daten absolut möglich.
           <br />
-          Das <a href="/contact-form">Kontaktformular</a> ist der einzige Ort, an dem Sie OPTIONAL Ihre persönlichen Daten eingeben können.
+          Das <a href="/kontaktformular">Kontaktformular</a> ist der einzige Ort, an dem Sie OPTIONAL Ihre persönlichen Daten eingeben können.
           Trotzdem gibt es keinen Grund zur Sorge, da wir Ihre Daten nicht speichern.
           Wir leiten sie nur per E-Mail an unsere im Rahmen der <a href="/impressum">Impressum</a>-Seite angegebene E-Mail-Adresse weiter.
         </p>

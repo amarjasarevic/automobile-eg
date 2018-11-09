@@ -34,7 +34,7 @@ const navItems = [
   },
   {
     label: 'Kontaktformular',
-    href: '/contact-form',
+    href: '/kontaktformular',
   },
 ]
 

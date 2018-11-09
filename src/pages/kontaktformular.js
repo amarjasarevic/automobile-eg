@@ -5,7 +5,7 @@ import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
 import { Section } from '../components/section/section'
-import './contact-form.css'
+import './kontaktformular.css'
 
 const fuelOptions = [
   { key: 'petrol', value: 'Petrol' },
@@ -20,7 +20,7 @@ const doorsOptions = [
   { key: '5', value: '5' },
 ]
 
-class ContactForm extends React.Component {
+class Kontaktformular extends React.Component {
   constructor() {
     super()
 
@@ -136,4 +136,4 @@ class ContactForm extends React.Component {
   }
 }
 
-export default ContactForm
+export default Kontaktformular
