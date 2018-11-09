@@ -5,6 +5,7 @@ import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
 import Location from '../components/location'
 import { injectGlobal } from 'emotion'
+import scrollToComponent from 'react-scroll-to-component'
 // import Faq from '../components/faq/faq'
 
 injectGlobal`
@@ -39,19 +40,45 @@ injectGlobal`
   }
 `
 
-const IndexPage = () => {
-  return (
-    <Layout>
-      <Home showAction />
-      <div id="about">
-        <About />
+class IndexPage extends React.Component {
+  constructor() {
+    super()
+
+    this.homeRef = React.createRef()
+    this.aboutRef = React.createRef()
+    this.locationRef = React.createRef()
+  }
+
+  componentDidMount() {
+    const componentName = localStorage.getItem('sectionToNavigate')
+
+    setTimeout(() => {
+      this.scrollTo(componentName)
+
+      localStorage.removeItem('sectionToNavigate')
+    }, 100)
+  }
+
+  scrollTo = (componentName) => {
+    if (componentName === 'about') {
+      scrollToComponent(this.aboutRef.current, { align: 'top' })
+    } else if (componentName === 'location') {
+      scrollToComponent(this.locationRef.current, { align: 'top' })
+    } else {
+      scrollToComponent(this.homeRef.current, { align: 'top' })
+    }
+  }
+
+  render() {
+    return (
+      <Layout onNavigate={this.scrollTo}>
+        <Home showAction ref={this.homeRef} />
+        <About ref={this.aboutRef} />
         <AboutUs />
-      </div>
-      {/* <Faq /> */}
-      <div id="location">
-        <Location />
-      </div>
-    </Layout>
-  )
+        <Location ref={this.locationRef} />
+      </Layout>
+    )
+  }
 }
+
 export default IndexPage

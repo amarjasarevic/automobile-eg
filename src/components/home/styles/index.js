@@ -64,7 +64,7 @@ export const Content = styled('div')`
           border-radius: 50%;
           position: absolute;
           right: -20px;
-          top: 10px;
+          top: 12px;
         }
       }
     }

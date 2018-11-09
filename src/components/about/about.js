@@ -24,7 +24,7 @@ export default () => (
     render={data => {
       const content = data.allContentJson.edges[0].node
       return (
-        <Section title={content.aboutTitle}>
+        <Section title={content.aboutTitle} id="about">
           <AboutRow>
             {content.aboutItems.map((item, i) => {
               return (

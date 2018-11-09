@@ -34,6 +34,7 @@
     "react-dom": "16.5.1",
     "react-emotion": "9.2.12",
     "react-helmet": "5.2.0",
+    "react-scroll-to-component": "1.0.2",
     "react-typography": "0.16.13",
     "typography": "0.16.17",
     "typography-theme-fairy-gates": "0.15.11",

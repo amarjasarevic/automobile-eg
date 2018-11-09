@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
 import TextField from '../components/form/text-field'
@@ -60,9 +61,13 @@ class Kontaktformular extends React.Component {
       .catch(() => console.log('Something wrong. Please try again.'))
   }
 
+  onNavigate = (hash) => {
+    navigate('/', { state: { hash } })
+  }
+
   render() {
     return (
-      <Layout>
+      <Layout onNavigate={this.onNavigate}>
         <Home />
         <Section title="Kontakt Formular" subtitle="">
           <form ref={this.formElement} onSubmit={this.handleSubmit} className="buy-form">
