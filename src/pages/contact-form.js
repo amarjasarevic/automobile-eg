@@ -4,6 +4,7 @@ import Home from '../components/home/home'
 import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
+import { Section } from '../components/section/section'
 import './contact-form.css'
 
 const fuelOptions = [
@@ -63,9 +64,8 @@ class ContactForm extends React.Component {
     return (
       <Layout>
         <Home />
-        <div className="container buy-form__root">
-          <h1>Kontakt Formular</h1>
-          <form ref={this.formElement} onSubmit={this.handleSubmit}>
+        <Section title="Kontakt Formular" subtitle="">
+          <form ref={this.formElement} onSubmit={this.handleSubmit} className="buy-form">
             <p>Pflichtfelder sind mit * gekennzeichnet.</p>
             <section>
               <h3>Kontaktdaten</h3>
@@ -130,7 +130,7 @@ class ContactForm extends React.Component {
               </div>
             </section>
           </form>
-        </div>
+        </Section>
       </Layout>
     )
   }

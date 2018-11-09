@@ -1,0 +1,25 @@
+.impressum__content > div {
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+.impressum__content > div a, .impressum__datenschutz a {
+    color: #fab700;
+}
+
+.impressum__datenschutz {
+    padding-bottom: 50px;
+}
+
+@media (min-width: 770px) {
+    .impressum__content > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 769px) {
+    .impressum__content > div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+.not-found__container {
+    text-align: center;
+    height: calc(100vh - 98px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.not-found__cta {
+    background-color: #04091e;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 auto;
+}

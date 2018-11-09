@@ -1,12 +1,8 @@
-.buy-form__root {
-    padding: 80px 0 0 0;
-}
-
-.buy-form__root input, .buy-form__root textarea, .buy-form__root button {
+.buy-form input, .buy-form textarea, .buy-form button {
     border: 1px solid #D3D3D3;
 }
 
-.buy-form__root section {
+.buy-form section {
     margin-top: 50px;
 }
 
