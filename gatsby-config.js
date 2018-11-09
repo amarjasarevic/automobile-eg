@@ -14,7 +14,7 @@ module.exports = {
         start_url: '/',
         background_color: '#04091e',
         theme_color: '#04091e',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/automobile-eg-icon.png', // This path is relative to the root of the site.
       },
     },
