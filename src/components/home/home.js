@@ -20,7 +20,6 @@ export default ({ ...props }) => (
           edges {
             node {
               headerTitle
-              headerSubtitle
               headerTelephone
               headerEmail
               headerCallToAction

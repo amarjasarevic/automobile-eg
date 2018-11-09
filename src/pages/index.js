@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import Home from '../components/home/home'
 import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
-// import Faq from '../components/faq/faq'
 import Location from '../components/location'
 import { injectGlobal } from 'emotion'
+// import Faq from '../components/faq/faq'
 
 injectGlobal`
   * {

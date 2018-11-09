@@ -13,8 +13,10 @@ const fuelOptions = [
 ]
 
 const doorsOptions = [
-  { key: '2/3', value: '2/3' },
-  { key: '4/5', value: '4/5' },
+  { key: '2', value: '2' },
+  { key: '3', value: '3' },
+  { key: '4', value: '4' },
+  { key: '5', value: '5' },
 ]
 
 class ContactForm extends React.Component {
@@ -61,43 +63,43 @@ class ContactForm extends React.Component {
     return (
       <Layout>
         <Home />
-        <div className="buy-form__root">
-          <h1>Buy form</h1>
+        <div className="container buy-form__root">
+          <h1>Kontakt Formular</h1>
           <form ref={this.formElement} onSubmit={this.handleSubmit}>
-            <p>Fields marked with * are required.</p>
+            <p>Pflichtfelder sind mit * gekennzeichnet.</p>
             <section>
-              <h3>Contact data</h3>
+              <h3>Kontaktdaten</h3>
               <div className="buy-form__fields">
-                <TextField identifier={'name'} label={'Full name'} />
-                <TextField identifier={'email'} label={'Email'} type={'email'} />
+                <TextField identifier={'name'} label={'Name'} />
+                <TextField identifier={'email'} label={'E-Mail'} type={'email'} />
               </div>
               <div className="buy-form__fields">
-                <TextField identifier={'phone'} label={'Phone'} type={'tel'} required />
-                <TextField identifier={'location'} label={'Post code / City'} required />
+                <TextField identifier={'phone'} label={'Telefon'} type={'tel'} required />
+                <TextField identifier={'location'} label={'PLZ / Ort'} required />
               </div>
             </section>
             <section>
-              <h3>Car data</h3>
+              <h3>Fahrzeugdaten</h3>
               <div className="buy-form__fields">
-                <TextField identifier={'brand'} label={'Brand'} required />
-                <TextField identifier={'type'} label={'Type'} required />
+                <TextField identifier={'brand'} label={'Marke'} required />
+                <TextField identifier={'type'} label={'Typ'} required />
               </div>
               <div className="buy-form__fields">
                 <TextField
                   identifier={'registration'}
-                  label={'First registration'}
+                  label={'Erstzulassung'}
                   type={'date'}
                   required
                 />
                 <RadioGroup
                   identifier={'fuel'}
-                  label={'Fuel'}
+                  label={'Kraftstoff'}
                   options={fuelOptions}
                   required
                 />
               </div>
               <div className="buy-form__fields">
-                <TextField identifier={'mileage'} label={'Mileage'} />
+                <TextField identifier={'mileage'} label={'KM-Stand'} />
                 <TextField identifier={'tuv'} label={'TÜV'} />
               </div>
               <div className="buy-form__fields">
@@ -109,21 +111,21 @@ class ContactForm extends React.Component {
                 />
               </div>
               <div className="buy-form__fields">
-                <TextField identifier={'colour'} label={'Colour'} />
-                <TextField identifier={'price'} label={'Price'} type={'number'} />
+                <TextField identifier={'colour'} label={'Farbe'} />
+                <TextField identifier={'price'} label={'Preisvorstellung'} type={'number'} />
               </div>
               <div className="buy-form__fields">
-                <TextArea identifier={'displacement'} label={'Displacement'} />
-                <TextArea identifier={'other'} label={'Other info'} />
+                <TextArea identifier={'displacement'} label={'Hubraum'} />
+                <TextArea identifier={'other'} label={'Sonstiges'} />
               </div>
             </section>
             <section>
               <div className="buy-form__actions">
                 <button type="button" onClick={this.handleClear}>
-                  Clear
+                  Löschen
                 </button>
                 <button type="submit">
-                  Send request
+                  Anfrage jetzt senden
                 </button>
               </div>
             </section>

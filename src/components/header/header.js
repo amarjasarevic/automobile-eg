@@ -21,19 +21,19 @@ const NavItem = ({ label, href }) => (
 
 const navItems = [
   {
-    label: 'Home',
+    label: 'Startseite',
     href: '/',
   },
   {
-    label: 'About',
+    label: 'Über uns',
     href: '/#about',
   },
   {
-    label: 'Location',
+    label: 'Anfahrt',
     href: '/#location',
   },
   {
-    label: 'Contact form',
+    label: 'Kontaktformular',
     href: '/contact-form',
   },
 ]

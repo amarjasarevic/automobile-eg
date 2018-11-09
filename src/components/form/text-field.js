@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { TextContent } from './styles'
 
 const TextField = ({ identifier, label, type, required }) => (
-  <div style={{ marginBottom: 20 }}>
+  <TextContent>
     <label htmlFor={identifier}>
       { label } { required && '*' }
     </label>
-    <input type={type || 'text'} name={identifier} id={identifier} style={{ width: '100%' }} required={required} />
-  </div>
+    <input type={type || 'text'} name={identifier} id={identifier} required={required} />
+  </TextContent>
 )
 
 TextField.propTypes = {

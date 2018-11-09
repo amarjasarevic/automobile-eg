@@ -1,19 +1,20 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { RadioGroupContent } from './styles'
 
 const RadioGroup = ({ identifier, label, options, required }) => (
-  <div style={{ marginBottom: 20 }}>
-    <label htmlFor={identifier} style={{ display: 'block' }}>
+  <RadioGroupContent>
+    <label htmlFor={identifier}>
       { label } { required && '*' }
     </label>
     { options.map(({ key, value }) =>
         <Fragment key={key}>
-          <input type="radio" name={identifier} id={key} value={key} style={{ marginLeft: 30 }} required={required} />
-          <label htmlFor={key} style={{ marginLeft: 10 }}>{ value }</label>
+          <input type="radio" name={identifier} id={key} value={key} required={required} />
+          <label htmlFor={key}>{ value }</label>
         </Fragment>
       )
     }
-  </div>
+  </RadioGroupContent>
 )
 
 RadioGroup.propTypes = {

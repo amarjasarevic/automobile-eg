@@ -34,7 +34,7 @@ class Location extends React.Component {
     return (
       <SectionStyles>
         <div className="container">
-          <SectionTitle>Look, maybe we are not so far</SectionTitle>
+          <SectionTitle>Schauen Sie, vielleicht sind wir nicht so weit</SectionTitle>
         </div>
         <div style={{ height: '75vh', position: 'relative' }}>
           <Map
@@ -60,7 +60,7 @@ class Location extends React.Component {
                 <p>
                   Bodenseestraße 129, 81243 München
                   <br/>
-                  +49 89 51299770
+                  +49 172 8 666 828
                 </p>
               </div>
             </InfoWindow>

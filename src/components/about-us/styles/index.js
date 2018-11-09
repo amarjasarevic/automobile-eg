@@ -58,6 +58,12 @@ export const ItemContent = styled('div')`
   padding: 35px;
   text-align: center;
   
+  @media (min-width: 900px) and (max-width: 959px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
   @media (min-width: 900px) {
     width: 100%;
   }

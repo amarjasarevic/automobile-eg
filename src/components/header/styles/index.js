@@ -35,7 +35,7 @@ export const HeaderLogo = styled('nav')`
       vertical-align: middle;
     }
   }
-  @media (max-width: 499px) {
+  @media (max-width: 509px) {
     a {
       span {
         display: none;
@@ -43,6 +43,11 @@ export const HeaderLogo = styled('nav')`
       img {
         margin: 0;
       }
+  }
+  @media (max-width: 359px) {
+    a img {
+      width: 30px;
+    }
   }
 `
 
@@ -66,9 +71,15 @@ export const NavItemStyle = styled('div')`
       font-weight: bold;
     }
   }
-  @media (max-width: 549px) {
+  @media (min-width: 360px) {
+    margin-right: 15px;
+  }
+  @media (max-width: 609px) {
     &:first-child {
       display: none;
     }
+  }
+  @media (max-width: 359px) {
+    margin-right: 8px;
   }
 `

@@ -1,47 +1,46 @@
 [
   {
-    "headerTitle": "We buy your car",
-    "headerSubtitle": "You can contact us any time!",
+    "headerTitle": "Wir kaufen Ihr Auto gegen Barzahlung",
     "headerTelephone": "+49 172 8 666 828",
     "headerEmail": "automobile.grozdanic@gmail.com",
-    "headerCallToAction": "OFFER YOUR CAR",
-    "aboutUsTitle": "We can make a deal in several ways",
+    "headerCallToAction": "BIETEN SIE IHR AUTO AN",
+    "aboutUsTitle": "Wir können auf verschiedene Weise einen Deal machen",
     "aboutUsItems": [
       {
         "id": 1,
+        "title": "Auf der Stelle",
         "image": "/static/on-the-spot.png",
-        "title": "On the spot",
-        "content": "You are more then welcome to come to our place with your car. Our location can be found at the bottom of the page."
+        "content": "Sie sind herzlich eingeladen, mit Ihrem Auto zu uns zu kommen. Unser Standort befindet sich am Ende der Seite."
       },
       {
         "id": 2,
-        "title": "Contact form",
+        "title": "Kontaktformular",
         "image": "/static/contact-form.png",
-        "content": "There is a well designed contact form. Enter the data about your car, and expect our call very soon. :)"
+        "content": "Sie benutzen das Kontaktformular und beschreiben Ihr Fahrzeug → Sie bekommen einen Rückruf von uns wir besprechen die weiteren Details"
       },
       {
         "id": 3,
-        "title": "Phone or mail",
+        "title": "Telefon oder E-Mail",
         "image": "/static/phone-or-mail.png",
-        "content": "You are free to contact us at any time via phone or mail, and in any form you want. Scroll up to find our contact data."
+        "content": "Sie können uns jederzeit telefonisch oder per E-Mail in beliebiger Form kontaktieren. Scrollen Sie nach oben, um unsere Kontaktdaten zu finden."
       }
     ],
-    "aboutTitle": "We specialize in buying cars in and around Munich or Bavaria",
+    "aboutTitle": "Wir sind spezialisiert auf den Autoankauf in und um München bzw. ganz Bayern und Baden-Württemberg",
     "aboutItems": [
       {
         "id": 1,
-        "title": "All brands",
-        "content": "We buy vehicles of all brands, even if it is made in Yugoslavia :)"
+        "title": "Alle Marken",
+        "content": "Wir kaufen Fahrzeuge aller Marken, auch wenn es in Jugoslawien hergestellt wird :)"
       },
       {
         "id": 2,
-        "title": "All types",
-        "content": "We do not care is it city car, limo, van, truck, or even dredge"
+        "title": "Alle arten",
+        "content": "Gebrauchtwagen, Unfallwagen sowie Nutzfahrzeuge (Stadtauto, Limousine, Lieferwagen, Lastwagen oder sogar Bagger)"
       },
       {
         "id": 3,
-        "title": "All conditions",
-        "content": "We also have nothing against old, accident, and long travelers vehicles"
+        "title": "Alle Bedingungen",
+        "content": "Wir haben auch nichts gegen Fahrzeuge, die alt sind, abgestürzt sind, sowie solche mit hoher Kilometerleistung, aber auch solche ohne TÜV"
       }
     ],
     "faqTitle": "Frequently asked questions",

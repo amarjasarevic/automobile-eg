@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { TextContent } from './styles'
 
 const TextArea = ({ identifier, label }) => (
-  <div style={{ marginBottom: 20 }}>
+  <TextContent>
     <label htmlFor={identifier}>
       { label }
     </label>
-    <textarea name={identifier} id={identifier} rows="4" style={{ width: '100%' }} />
-  </div>
+    <textarea name={identifier} id={identifier} rows="4" />
+  </TextContent>
 )
 
 TextArea.propTypes = {
