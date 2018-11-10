@@ -5,4 +5,8 @@ export const FooterStyles = styled('footer')`
   background-color: #04091e;
   color: white;
   text-align: center;
+
+  a {
+    color: #fab700;
+  }
 `

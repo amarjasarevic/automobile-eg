@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
 import { Section } from '../components/section/section'
@@ -22,7 +23,7 @@ const Impressum = () => (
         </div>
       </div>
       <div className="impressum__datenschutz">
-        <p>Interessiert am <a href="/datenschutz">Datenschutz</a>? Klick <a href="/datenschutz">hier</a>.</p>
+        <p>Interessiert am <Link to="/datenschutz">Datenschutz</Link>? Klick <Link to="/datenschutz">hier</Link>.</p>
       </div>
     </Section>
   </Layout>

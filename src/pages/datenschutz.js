@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
 import { Section } from '../components/section/section'
@@ -10,14 +11,14 @@ const Datenschutz = () => (
     <Section title="Datenschutz">
       <div className="datenschutz__content">
         <p>
-          Willkommen bei <a href="/">Automobile EG</a>.
+          Willkommen bei <Link to="/">Automobile EG</Link>.
         </p>
         <p>
           Wie Sie bereits gesehen haben, ist die Nutzung unserer Website ohne Angabe personenbezogener Daten absolut möglich.
           <br />
-          Das <a href="/kontaktformular">Kontaktformular</a> ist der einzige Ort, an dem Sie OPTIONAL Ihre persönlichen Daten eingeben können.
+          Das <Link to="/kontaktformular">Kontaktformular</Link> ist der einzige Ort, an dem Sie OPTIONAL Ihre persönlichen Daten eingeben können.
           Trotzdem gibt es keinen Grund zur Sorge, da wir Ihre Daten nicht speichern.
-          Wir leiten sie nur per E-Mail an unsere im Rahmen der <a href="/impressum">Impressum</a>-Seite angegebene E-Mail-Adresse weiter.
+          Wir leiten sie nur per E-Mail an unsere im Rahmen der <Link to="/impressum">Impressum</Link>-Seite angegebene E-Mail-Adresse weiter.
         </p>
         <p>
           Viel Spaß beim Stöbern durch unsere Website. :)

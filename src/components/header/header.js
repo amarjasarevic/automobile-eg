@@ -16,12 +16,14 @@ class NavItem extends React.Component {
     const { onNavigate, componentName } = this.props
 
     if (componentName) {
-      event.preventDefault()
-      event.stopPropagation()
-
       localStorage.setItem('sectionToNavigate', componentName)
 
-      onNavigate(componentName)
+      if (onNavigate) {
+        event.preventDefault()
+        event.stopPropagation()
+
+        onNavigate(componentName)
+      }
     }
   }
 
