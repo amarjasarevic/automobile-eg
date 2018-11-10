@@ -5,6 +5,9 @@ import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
 import { Section } from '../components/section/section'
+// toast
+import { ToastContainer, ToastStore } from '../components/toast'
+
 import './kontaktformular.css'
 
 const fuelOptions = [
@@ -20,6 +23,9 @@ const doorsOptions = [
   { key: '5', value: '5' },
 ]
 
+//TODO: update to DE if ok
+const toastMessages = ['Email successfully sent !', 'Form submission error !']
+
 class Kontaktformular extends React.Component {
   constructor() {
     super()
@@ -33,7 +39,9 @@ class Kontaktformular extends React.Component {
     this.formElement.current.reset()
   }
 
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault()
+
     const request = {}
 
     const elements = this.formElement.current.elements
@@ -49,33 +57,62 @@ class Kontaktformular extends React.Component {
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
       },
+      mode: 'no-cors',
       body: JSON.stringify(request),
     }
 
-    fetch('http://localhost:8080/new-car', fetchOptions)
+    fetch('http://automobile-eg.valet/send_email.php', fetchOptions)
       .then(() => {
-        this.handleClear()
+        ToastStore.success(toastMessages[0])
+        setTimeout(() => {
+          this.handleClear()
+        }, 700)
         console.log('Request successfully sent.')
       })
-      .catch(() => console.log('Something wrong. Please try again.'))
+      .catch(() => {
+        ToastStore.error(toastMessages[1])
+        console.log('Something wrong. Please try again.')
+      })
   }
 
   render() {
     return (
       <Layout>
+        <ToastContainer
+          store={ToastStore}
+          lightBackground
+          position="top_center"
+        />
         <Home />
         <Section title="Kontakt Formular" subtitle="">
-          <form ref={this.formElement} onSubmit={this.handleSubmit} className="buy-form">
+          <form
+            ref={this.formElement}
+            onSubmit={this.handleSubmit}
+            className="buy-form"
+          >
             <p>Pflichtfelder sind mit * gekennzeichnet.</p>
             <section>
               <h3>Kontaktdaten</h3>
               <div className="buy-form__fields">
                 <TextField identifier={'name'} label={'Name'} />
-                <TextField identifier={'email'} label={'E-Mail'} type={'email'} />
+                <TextField
+                  identifier={'email'}
+                  label={'E-Mail'}
+                  type={'email'}
+                />
               </div>
               <div className="buy-form__fields">
-                <TextField identifier={'phone'} label={'Telefon'} type={'tel'} required />
-                <TextField identifier={'location'} label={'PLZ / Ort'} required />
+                <TextField
+                  identifier={'phone'}
+                  label={'Telefon'}
+                  type={'tel'}
+                  required
+                />
+                <TextField
+                  identifier={'location'}
+                  label={'PLZ / Ort'}
+                  required
+                />
               </div>
             </section>
             <section>
@@ -112,7 +149,11 @@ class Kontaktformular extends React.Component {
               </div>
               <div className="buy-form__fields">
                 <TextField identifier={'colour'} label={'Farbe'} />
-                <TextField identifier={'price'} label={'Preisvorstellung'} type={'number'} />
+                <TextField
+                  identifier={'price'}
+                  label={'Preisvorstellung'}
+                  type={'number'}
+                />
               </div>
               <div className="buy-form__fields">
                 <TextArea identifier={'displacement'} label={'Hubraum'} />
@@ -124,9 +165,7 @@ class Kontaktformular extends React.Component {
                 <button type="button" onClick={this.handleClear}>
                   Löschen
                 </button>
-                <button type="submit">
-                  Anfrage jetzt senden
-                </button>
+                <button type="submit">Anfrage jetzt senden</button>
               </div>
             </section>
           </form>
