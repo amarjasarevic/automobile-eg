@@ -24,9 +24,10 @@ export const RadioGroupContent = styled('div')`
 `
 
 export const TextContent = styled('div')`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
   }
 `

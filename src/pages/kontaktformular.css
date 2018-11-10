@@ -1,78 +1,96 @@
-.buy-form input, .buy-form textarea, .buy-form button {
-    border: 1px solid #D3D3D3;
+.buy-form input,
+.buy-form textarea,
+.buy-form button {
+  border: 1px solid #d3d3d3;
+}
+
+.buy-form p {
+  color: #fab700;
+}
+
+.buy-form input {
+  padding: 5px 5px;
+}
+
+.buy-form label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 0.1px;
+  color: hsla(0, 0%, 0%, 0.7);
 }
 
 .buy-form section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .buy-form__actions {
-    text-align: center;
+  text-align: center;
 }
 
 .buy-form__actions > button {
-    cursor: pointer;
-    outline: none;
-    padding: 5px 0;
+  cursor: pointer;
+  outline: none;
+  padding: 5px 0;
 }
 
 .buy-form__actions > button:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buy-form__actions > button:first-child {
-    background-color: #FFFFFF;
-    color: #04091e;
-    margin-right: 2%;
+  background-color: #ffffff;
+  color: #04091e;
+  margin-right: 2%;
 }
 
 .buy-form__actions > button:last-child {
-    background-color: #04091e;
-    color: #FFFFFF;
-    margin-left: 2%;
+  background-color: #04091e;
+  color: #ffffff;
+  margin-left: 2%;
 }
 
 @media (min-width: 960px) {
-    .buy-form__fields > div {
-        display: inline-block;
-        width: 48%;
-    }
+  .buy-form__fields > div {
+    display: inline-block;
+    width: 48%;
+  }
 
-    .buy-form__fields > div:last-child {
-        float: right;
-    }
+  .buy-form__fields > div:last-child {
+    float: right;
+  }
 
-    .buy-form__actions > button {
-        width: 200px;
-    }
+  .buy-form__actions > button {
+    width: 200px;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 959px) {
-    .buy-form__actions > button {
-        max-width: 200px;
-        width: 48%;
-    }
+  .buy-form__actions > button {
+    max-width: 200px;
+    width: 48%;
+  }
 }
 
 @media (max-width: 449px) {
-    .buy-form__actions {
-        display: flex;
-        flex-direction: column;
-    }
+  .buy-form__actions {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .buy-form__actions > button {
-        height: 50px;
-        margin: 0;
-        width: 100%;
-    }
+  .buy-form__actions > button {
+    height: 50px;
+    margin: 0;
+    width: 100%;
+  }
 
-    .buy-form__actions > button:first-child {
-        margin: 0;
-        order: 2;
-    }
+  .buy-form__actions > button:first-child {
+    margin: 0;
+    order: 2;
+  }
 
-    .buy-form__actions > button:last-child {
-        margin: 0 0 20px 0;
-        order: 1;
-    }
+  .buy-form__actions > button:last-child {
+    margin: 0 0 20px 0;
+    order: 1;
+  }
 }
