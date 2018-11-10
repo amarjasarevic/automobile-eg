@@ -7,7 +7,7 @@ import './impressum.css'
 
 const Impressum = () => (
   <Layout>
-    <Home />
+    <Home showAction />
     <Section title="Impressum">
       <h3>Kontakt</h3>
       <div className="impressum__content">

@@ -5,6 +5,8 @@ class AutomobileEGMap extends React.Component {
   constructor() {
     super();
 
+    console.log('cons')
+
     this.state = {
       showingInfoWindow: false,
       activeMarker: {},
@@ -54,7 +56,7 @@ class AutomobileEGMap extends React.Component {
             <p>
               Bodenseestraße 129, 81243 München
               <br/>
-              +49 89 51299770
+              +49 172 8 666 828
             </p>
           </div>
         </InfoWindow>

@@ -7,7 +7,7 @@ import './datenschutz.css'
 
 const Datenschutz = () => (
   <Layout>
-    <Home />
+    <Home showAction />
     <Section title="Datenschutz">
       <div className="datenschutz__content">
         <p>
