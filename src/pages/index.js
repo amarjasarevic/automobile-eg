@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
 import AboutUs from '../components/about-us/about-us'
@@ -40,7 +40,7 @@ injectGlobal`
   }
 `
 
-class IndexPage extends React.Component {
+class IndexPage extends PureComponent {
   constructor() {
     super()
 
@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
     }, 100)
   }
 
-  scrollTo = (componentName) => {
+  scrollTo = componentName => {
     if (componentName === 'about') {
       scrollToComponent(this.aboutRef.current, { align: 'top' })
     } else if (componentName === 'location') {
