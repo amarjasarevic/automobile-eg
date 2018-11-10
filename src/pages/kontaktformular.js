@@ -23,8 +23,7 @@ const doorsOptions = [
   { key: '5', value: '5' },
 ]
 
-//TODO: update to DE if ok
-const toastMessages = ['Email successfully sent !', 'Form submission error !']
+const toastMessages = ['E-Mail erfolgreich gesendet.', 'Fehler beim Senden des Formulars Bitte versuche es erneut.']
 
 class Kontaktformular extends React.Component {
   constructor() {
@@ -67,11 +66,9 @@ class Kontaktformular extends React.Component {
         setTimeout(() => {
           this.handleClear()
         }, 700)
-        console.log('Request successfully sent.')
       })
       .catch(() => {
         ToastStore.error(toastMessages[1])
-        console.log('Something wrong. Please try again.')
       })
   }
 

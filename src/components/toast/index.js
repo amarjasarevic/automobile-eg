@@ -165,10 +165,14 @@ class Container extends Component {
   }
 
   render() {
-    return ReactDOM.createPortal(
-      this._renderContainer(),
-      document.body
-    );
+    if (typeof window !== 'undefined') {
+      return ReactDOM.createPortal(
+        this._renderContainer(),
+        document.body
+      );
+    }
+
+    return null
   }
 }
 
