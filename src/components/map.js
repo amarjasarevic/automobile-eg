@@ -5,8 +5,6 @@ class AutomobileEGMap extends React.Component {
   constructor() {
     super();
 
-    console.log('cons')
-
     this.state = {
       showingInfoWindow: false,
       activeMarker: {},
