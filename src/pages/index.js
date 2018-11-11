@@ -3,7 +3,8 @@ import Layout from '../components/layout'
 import Home from '../components/home/home'
 import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
-import Location from '../components/location'
+import Advantages from '../components/advantages/advantages'
+import Location from '../components/location/location'
 import { injectGlobal } from 'emotion'
 import scrollToComponent from 'react-scroll-to-component'
 // import Faq from '../components/faq/faq'
@@ -59,6 +60,10 @@ class IndexPage extends PureComponent {
     }, 100)
   }
 
+  componentWillUnmount() {
+    localStorage.removeItem('sectionToNavigate')
+  }
+
   scrollTo = componentName => {
     if (componentName === 'about') {
       scrollToComponent(this.aboutRef.current, { align: 'top' })
@@ -75,6 +80,7 @@ class IndexPage extends PureComponent {
         <Home showAction ref={this.homeRef} />
         <About ref={this.aboutRef} />
         <AboutUs />
+        <Advantages />
         <Location ref={this.locationRef} />
       </Layout>
     )

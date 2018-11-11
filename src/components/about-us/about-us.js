@@ -3,9 +3,9 @@ import { Section } from '../section/section'
 import { StaticQuery, graphql } from 'gatsby'
 import { AboutUsItems, ItemBlock, ImageHolder, ItemContent } from './styles'
 
-import onTheSpotImage from '../../images/on-the-spot.png';
-import phoneOrMailImage from '../../images/phone-or-mail.png';
-import contactFormImage from '../../images/contact-form.png';
+import onTheSpotImage from '../../images/on-the-spot.png'
+import phoneOrMailImage from '../../images/phone-or-mail.png'
+import contactFormImage from '../../images/contact-form.png'
 
 export default () => (
   <StaticQuery
@@ -34,15 +34,27 @@ export default () => (
           <AboutUsItems>
             {content.aboutUsItems.map((item) => {
 
-              const image = item.id === 1 ? onTheSpotImage : item.id === 2 ? contactFormImage : phoneOrMailImage
-
+              let image = ''
               let imageStyle = {}
-              if (item.id === 1) {
-                imageStyle = { marginTop: 35 };
-              } else if (item.id === 2) {
-                imageStyle = { marginTop: - 75 };
-              } else {
-                imageStyle = { marginTop: 20, marginLeft: 30 };
+
+              switch (item.id) {
+                case 1:
+                  image = onTheSpotImage
+                  imageStyle = { marginTop: 35 }
+                  break
+
+                case 2:
+                  image = contactFormImage
+                  imageStyle = { marginTop: - 75 }
+                  break
+
+                case 3:
+                  image = phoneOrMailImage
+                  imageStyle = { marginTop: 20, marginLeft: 30 }
+                  break
+
+                default:
+                  break
               }
 
               return (

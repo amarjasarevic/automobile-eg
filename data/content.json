@@ -43,6 +43,33 @@
         "content": "Wir haben auch nichts gegen Fahrzeuge, die alt sind, abgestürzt sind, sowie solche mit hoher Kilometerleistung, aber auch solche ohne TÜV"
       }
     ],
+    "advantagesTitle": "Ihre Vorteile",
+    "advantagesItems": [
+      {
+        "id": 1,
+        "text": "Sie sparen sich Zeit das Auto zu inserieren"
+      },
+      {
+        "id": 2,
+        "text": "Sie bekommen keine lästige Anrufe aus aller Welt"
+      },
+      {
+        "id": 3,
+        "text": "Sie müssen Ihr Auto nicht auf verschiedenen Plattformen aufwändig inserieren"
+      },
+      {
+        "id": 4,
+        "text": "Sie werden bar ausbezahlt"
+      },
+      {
+        "id": 5,
+        "text": "Ihr Fahrzeug wird nach Kauf kostenlos abgeholt"
+      },
+      {
+        "id": 6,
+        "text": "Wir übernehmen für Sie die Abmeldung des Fahrzeuges"
+      }
+    ],
     "faqTitle": "Frequently asked questions",
     "faqSubtitle": "How can we help ? ",
     "faqItems": [

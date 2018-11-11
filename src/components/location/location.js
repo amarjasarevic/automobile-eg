@@ -1,6 +1,6 @@
 import React from 'react'
 import TrackVisibility from 'react-on-screen'
-import { SectionStyles, SectionTitle } from './section/styles/index'
+import { SectionStyles, SectionTitle } from '../section/styles/index'
 import Map from './map'
 
 const Location = () => (
