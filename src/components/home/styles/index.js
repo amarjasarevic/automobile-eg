@@ -126,7 +126,6 @@ export const CallToAction = styled('div')`
   a {
     color: #fff;
     font-weight: bold;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 12px 40px;
   }
 `

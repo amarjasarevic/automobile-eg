@@ -1,12 +1,11 @@
 import React from 'react'
 import './scroll-up.css'
 
-const DISTANCE = 50;
-const SPEED = 250;
+const DISTANCE = 50
 
 class ScrollUp extends React.Component {
   constructor() {
-    super();
+    super()
 
     this.state = {
       showScrollUp: false
@@ -14,60 +13,34 @@ class ScrollUp extends React.Component {
   }
 
   componentDidMount() {
-    this.checkForScrollToTop();
+    this.checkForScrollToTop()
 
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   componentWillUnmount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   checkForScrollToTop = () => {
-    const show = document.body.scrollTop > DISTANCE || document.documentElement.scrollTop > DISTANCE;
+    const show = document.body.scrollTop > DISTANCE || document.documentElement.scrollTop > DISTANCE
 
-    this.setState({ showScrollUp: show });
+    this.setState({ showScrollUp: show })
   }
 
   handleScroll = () => {
-    this.checkForScrollToTop();
+    this.checkForScrollToTop()
   }
 
   scrollUp = () => {
-    const { performance, requestAnimationFrame } = window;
-
-    if (SPEED <= 0 || typeof performance === 'undefined' || typeof requestAnimationFrame === 'undefined') {
-      return ScrollUp.setScrollTop(0);
-    }
-
-    const start = performance.now();
-    const initScrollTop = ScrollUp.getScrollTop();
-    const pxsToScrollBy = initScrollTop - 0;
-
-    requestAnimationFrame(step);
-
-    function step(timestamp) {
-      const delta = timestamp - start;
-      const progress = Math.min(delta / SPEED, 1);
-      ScrollUp.setScrollTop(initScrollTop - Math.round(progress * pxsToScrollBy));
-      if (progress < 1) {
-        requestAnimationFrame(step);
-      }
-    }
-  }
-
-  static getScrollTop = () =>
-    document.body.scrollTop || ((document.documentElement && document.documentElement.scrollTop) || 0);
-
-  static setScrollTop = (value) => {
-    document.body.scrollTop = value;
-    if (document.documentElement) {
-      document.documentElement.scrollTop = value;
-    }
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
   }
 
   render() {
-    const scrollUpStyle = this.state.showScrollUp ? { bottom: '2rem', opacity: 0.9 } : {};
+    const scrollUpStyle = this.state.showScrollUp ? { bottom: '2rem', opacity: 0.9 } : {}
 
     return (
       <button
@@ -83,4 +56,4 @@ class ScrollUp extends React.Component {
   }
 }
 
-export default ScrollUp;
+export default ScrollUp

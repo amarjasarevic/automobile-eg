@@ -6,8 +6,6 @@ import About from '../components/about/about'
 import Advantages from '../components/advantages/advantages'
 import Location from '../components/location/location'
 import { injectGlobal } from 'emotion'
-import scrollToComponent from 'react-scroll-to-component'
-// import Faq from '../components/faq/faq'
 
 injectGlobal`
   * {
@@ -54,7 +52,7 @@ class IndexPage extends PureComponent {
     const componentName = localStorage.getItem('sectionToNavigate')
 
     setTimeout(() => {
-      this.scrollTo(componentName)
+      this.scrollToComponent(componentName)
 
       localStorage.removeItem('sectionToNavigate')
     }, 100)
@@ -64,24 +62,37 @@ class IndexPage extends PureComponent {
     localStorage.removeItem('sectionToNavigate')
   }
 
-  scrollTo = componentName => {
+  scrollToComponent = componentName => {
     if (componentName === 'about') {
-      scrollToComponent(this.aboutRef.current, { align: 'top' })
+      this.scrollTo(this.aboutRef.current.offsetTop)
     } else if (componentName === 'location') {
-      scrollToComponent(this.locationRef.current, { align: 'top' })
+      this.scrollTo(this.locationRef.current.offsetTop)
     } else {
-      scrollToComponent(this.homeRef.current, { align: 'top' })
+      this.scrollTo(this.homeRef.current.offsetTop)
     }
+  }
+
+  scrollTo = (position) => {
+    window.scrollTo({
+      top: position,
+      behavior: 'smooth'
+    })
   }
 
   render() {
     return (
-      <Layout onNavigate={this.scrollTo}>
-        <Home showAction ref={this.homeRef} />
-        <About ref={this.aboutRef} />
-        <AboutUs />
-        <Advantages />
-        <Location ref={this.locationRef} />
+      <Layout onNavigate={this.scrollToComponent}>
+        <div ref={this.homeRef}>
+          <Home showAction />
+        </div>
+        <div ref={this.aboutRef}>
+          <About />
+          <AboutUs />
+          <Advantages />
+        </div>
+        <div ref={this.locationRef}>
+          <Location />
+        </div>
       </Layout>
     )
   }
