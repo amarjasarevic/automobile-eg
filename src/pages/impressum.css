@@ -1,6 +1,9 @@
+.impressum__content {
+    padding-bottom: 50px;
+}
+
 .impressum__content > div {
     display: inline-block;
-    padding-bottom: 50px;
     width: 50%;
 }
 

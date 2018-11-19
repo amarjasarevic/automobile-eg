@@ -22,6 +22,14 @@ const Impressum = () => (
           <p><b>E-Mail:</b> <a href="mailto:automobile.grozdanic@gmail.com">automobile.grozdanic@gmail.com</a></p>
         </div>
       </div>
+      <h3>Umsatzsteuer-ID</h3>
+      <div className="impressum__content">
+        <p><b>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</b></p>
+        <p><b>Berufsbezeichnung:</b> Gebrauchtwagen Händler Zuständige Kammer: München</p>
+        <p><b>Verliehen durch:</b> Deutschland</p>
+        <p><b>Es gelten folgende berufsrechtliche Regelungen:</b></p>
+        <p><b>Regelungen einsehbar unter:</b></p>
+      </div>
       <div className="impressum__datenschutz">
         <p>Interessiert am <Link to="/datenschutz">Datenschutz</Link>? Klick <Link to="/datenschutz">hier</Link>.</p>
       </div>

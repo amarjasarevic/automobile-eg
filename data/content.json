@@ -4,11 +4,11 @@
     "headerTelephone": "+49 172 8 666 828",
     "headerEmail": "automobile.grozdanic@gmail.com",
     "headerCallToAction": "BIETEN SIE IHR AUTO AN",
-    "aboutUsTitle": "Wir können auf verschiedene Weise einen Deal machen",
+    "aboutUsTitle": "Wir können auf verschiedene Weise einen Deal abschließen",
     "aboutUsItems": [
       {
         "id": 1,
-        "title": "Auf der Stelle",
+        "title": "Vor Ort",
         "image": "/static/on-the-spot.png",
         "content": "Sie sind herzlich eingeladen, mit Ihrem Auto zu uns zu kommen. Unser Standort befindet sich am Ende der Seite."
       },
@@ -30,17 +30,17 @@
       {
         "id": 1,
         "title": "Alle Marken",
-        "content": "Wir kaufen Fahrzeuge aller Marken, auch wenn es in Jugoslawien hergestellt wird :)"
+        "content": "Wir kaufen Fahrzeuge aller Marken bzw. Hersteller"
       },
       {
         "id": 2,
-        "title": "Alle arten",
+        "title": "Alle Arten",
         "content": "Gebrauchtwagen, Unfallwagen sowie Nutzfahrzeuge (Stadtauto, Limousine, Lieferwagen, Lastwagen oder sogar Bagger)"
       },
       {
         "id": 3,
         "title": "Alle Bedingungen",
-        "content": "Wir haben auch nichts gegen Fahrzeuge, die alt sind, abgestürzt sind, sowie solche mit hoher Kilometerleistung, aber auch solche ohne TÜV"
+        "content": "Wir haben nichts gegen PKW 's oder LKW 's mit hoher Kilometerleistung oder ohne TÜV"
       }
     ],
     "advantagesTitle": "Ihre Vorteile",
