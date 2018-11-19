@@ -37,6 +37,8 @@ class ScrollUp extends React.Component {
       top: 0,
       behavior: 'smooth'
     })
+
+    localStorage.removeItem('sectionToNavigate')
   }
 
   render() {
