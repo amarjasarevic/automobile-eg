@@ -140,7 +140,7 @@ class Kontaktformular extends React.Component {
                 <TextField identifier={'ps'} label={'PS'} type={'number'} />
                 <RadioGroup
                   identifier={'doors'}
-                  label={'Doors'}
+                  label={'Türen'}
                   options={doorsOptions}
                 />
               </div>
