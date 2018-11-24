@@ -63,6 +63,9 @@ class AutomobileEGMap extends React.Component {
   }
 }
 
-export default GoogleApiWrapper({
-  api: (process.env.GOOGLE_API_KEY_GOES_HERE)
-})(AutomobileEGMap)
+export default GoogleApiWrapper(
+  () => ({
+      apiKey: 'AIzaSyAIyuRRHBRsMGR-z-mkv0_V73j_P4zewq8',
+      language: 'de',
+    }
+  ))(AutomobileEGMap)
