@@ -5,6 +5,7 @@ import AboutUs from '../components/about-us/about-us'
 import About from '../components/about/about'
 import Advantages from '../components/advantages/advantages'
 import Location from '../components/location/location'
+import SEO from '../components/seo'
 import { injectGlobal } from 'emotion'
 
 injectGlobal`
@@ -82,6 +83,7 @@ class IndexPage extends PureComponent {
   render() {
     return (
       <Layout onNavigate={this.scrollToComponent}>
+        <SEO />
         <div ref={this.homeRef}>
           <Home showAction />
         </div>

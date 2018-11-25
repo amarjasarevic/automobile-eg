@@ -2,9 +2,18 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: 'Automobile EG',
+    title: '· Automobile EG ·',
+    titleTemplate: '%s · Automobile EG',
+    description:
+      'WIR KAUFEN IHR AUTO GEGEN BARZAHLUNG',
+    url: 'http://automobile-eg.de', // no trailing slash!
+    image: '/img/automobile-eg-logo.png',
+    owner: 'automobile EG',
+    twitterUsername: '',
+    facebookAppID: '',
   },
   plugins: [
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

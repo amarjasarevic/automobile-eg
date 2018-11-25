@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
+import SEO from '../components/seo';
 import { Section } from '../components/section/section'
 import './impressum.css'
 
 const Impressum = () => (
   <Layout>
+    <SEO />
     <Home showAction />
     <Section title="Impressum">
       <h3>Kontakt</h3>

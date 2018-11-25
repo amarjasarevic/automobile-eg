@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Home from '../components/home/home'
+import SEO from '../components/seo';
 import TextField from '../components/form/text-field'
 import TextArea from '../components/form/text-area'
 import RadioGroup from '../components/form/radio-group'
@@ -75,6 +76,7 @@ class Kontaktformular extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO />
         <ToastContainer
           store={ToastStore}
           lightBackground
