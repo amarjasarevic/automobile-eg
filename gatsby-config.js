@@ -2,6 +2,7 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'http://automobile-eg.de',
     title: '· Automobile EG ·',
     titleTemplate: '%s · Automobile EG',
     description:
