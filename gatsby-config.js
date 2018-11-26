@@ -2,12 +2,12 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'http://automobile-eg.de',
+    siteUrl: 'https://automobile-eg.de',
     title: '· Automobile EG ·',
     titleTemplate: '%s · Automobile EG',
     description:
       'WIR KAUFEN IHR AUTO GEGEN BARZAHLUNG',
-    url: 'http://automobile-eg.de', // no trailing slash!
+    url: 'https://automobile-eg.de', // no trailing slash!
     image: '/img/automobile-eg-logo.png',
     owner: 'automobile EG',
     twitterUsername: '',

@@ -61,7 +61,7 @@ class Kontaktformular extends React.Component {
       body: JSON.stringify(request),
     }
 
-    fetch('http://automobile-eg.de/api/send_email.php', fetchOptions)
+    fetch('https://automobile-eg.de/api/send_email.php', fetchOptions)
       .then(() => {
         ToastStore.success(toastMessages[0])
         setTimeout(() => {
