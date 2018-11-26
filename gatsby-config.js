@@ -20,12 +20,54 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Automobile EG',
-        short_name: 'Automobile EG',
+        short_name: 'AutomobileEG',
         start_url: '/',
         background_color: '#04091e',
         theme_color: '#04091e',
         display: 'standalone',
-        icon: 'src/images/automobile-eg-icon.png', // This path is relative to the root of the site.
+        legacy: true,
+        icons: [
+          {
+            src: '/favicons/icon-48x48.png',
+            sizes: '48x48',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-72x72.png',
+            sizes: '72x72',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-256x256.png',
+            sizes: '256x256',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
+        ],
       },
     },
     'gatsby-plugin-offline',

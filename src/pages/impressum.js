@@ -26,7 +26,7 @@ const Impressum = () => (
       </div>
       <h3>Umsatzsteuer-ID</h3>
       <div className="impressum__content">
-        <p><b>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</b></p>
+        <p><b>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</b> DE221522482</p>
         <p><b>Berufsbezeichnung:</b> Gebrauchtwagen Händler Zuständige Kammer: München</p>
         <p><b>Verliehen durch:</b> Deutschland</p>
         <p><b>Es gelten folgende berufsrechtliche Regelungen:</b></p>
