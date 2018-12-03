@@ -37,12 +37,12 @@ class AutomobileEGMap extends React.Component {
         google={this.props.google}
         onClick={this.onMapClick}
         zoom={14}
-        initialCenter={{ lat: 48.14434, lng: 11.43694 }}
+        initialCenter={{ lat: 48.15884, lng: 11.4187013 }}
       >
         <Marker
           onClick={this.onMarkerClick}
           title={'Automobile EG'}
-          position={{ lat: 48.14434, lng: 11.43694 }}
+          position={{ lat: 48.15884, lng: 11.4187013 }}
           name={'Automobile EG'}
         />
         <InfoWindow
@@ -52,7 +52,7 @@ class AutomobileEGMap extends React.Component {
           <div>
             <h4>Automobile EG</h4>
             <p>
-              Bodenseestraße 129, 81243 München
+              Hohenrechbergstraße 12-14, 81245 München
               <br/>
               +49 172 8 666 828
             </p>

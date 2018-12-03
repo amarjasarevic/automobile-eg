@@ -15,8 +15,8 @@ const Impressum = () => (
       <div className="impressum__content">
         <div>
           <p>Automobile EG</p>
-          <p>Bodenseestraße 129</p>
-          <p>81243 München</p>
+          <p>Hohenrechbergstraße 12-14</p>
+          <p>81245 München</p>
         </div>
         <div>
           <p><b>Geschäftsführer:</b> Elvir Grozdanic</p>
