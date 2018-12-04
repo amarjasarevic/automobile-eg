@@ -5,7 +5,7 @@ export const Header = styled('div')`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 320px;
+  min-height: 400px;
 `
 
 export const OverlayBg = styled('div')`
@@ -16,14 +16,16 @@ export const OverlayBg = styled('div')`
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
 `
+
 export const HeaderContent = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: ${props => (props.height ? props.height : '60vh')};
-  min-height: 320px;
+  min-height: 400px;
 `
+
 export const Content = styled('div')`
   position: relative;
 
@@ -44,6 +46,8 @@ export const Content = styled('div')`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
 
     a {
       color: white;
@@ -55,15 +59,15 @@ export const Content = styled('div')`
         color: #fab700;
       }
 
-      &:first-child {
-        &:after {
+      &:nth-child(2) {
+        &:before {
           content: '';
           width: 5px;
           height: 5px;
           background: white;
           border-radius: 50%;
           position: absolute;
-          right: -20px;
+          left: -20px;
           top: 12px;
         }
       }
@@ -92,8 +96,8 @@ export const Content = styled('div')`
       a {
         margin-right: 0;
 
-        &:first-child {
-          &:after {
+        &:nth-child(2) {
+          &:before {
             content: none;
           }
         }
@@ -122,10 +126,16 @@ export const CallToAction = styled('div')`
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  margin-top: 1.45rem;
 
   a {
     color: #fff;
     font-weight: bold;
     padding: 12px 40px;
   }
+`
+
+export const InvisibleCTA = styled('div')`
+  height: 44px;
+  margin-top: 1.45rem;
 `

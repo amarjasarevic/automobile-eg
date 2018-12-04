@@ -8,6 +8,7 @@ import {
   Content,
   CallToAction,
   HeaderLink,
+  InvisibleCTA,
 } from './styles'
 
 import headerBg from './tow-truck.jpg'
@@ -22,6 +23,8 @@ export default ({ ...props }) => (
               headerTitle
               headerTelephone
               headerEmail
+              headerAddress
+              headerAddressLink
               headerCallToAction
             }
           }
@@ -51,6 +54,11 @@ export default ({ ...props }) => (
                     {content.headerEmail}
                   </HeaderLink>
                 </h2>
+                <h2>
+                  <HeaderLink href={content.headerAddressLink} target="_blank">
+                    {content.headerAddress}
+                  </HeaderLink>
+                </h2>
 
                 {showAction && (
                   <CallToAction>
@@ -58,7 +66,7 @@ export default ({ ...props }) => (
                   </CallToAction>
                 )}
 
-                {!showAction && (<div style={{ height: 44 }} />)}
+                {!showAction && (<InvisibleCTA />)}
               </Content>
             </HeaderContent>
           </div>
